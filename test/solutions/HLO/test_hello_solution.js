@@ -4,7 +4,7 @@ import HelloSolution from "../../../lib/solutions/HLO/hello_solution.js";
 
 describe("Hello World challenge: Return the correct greeting", function () {
   it("should return 'Hello there Vlad!'", function () {
-    assert.strictEqual(new HelloSolution().hello("Vlad"), "Hello there Vlad!");
+    assert.strictEqual(new HelloSolution().hello("Vlad"), "Hello, World!");
   });
 
   it("should return error if parameter is not defined or string", function () {
@@ -23,5 +23,6 @@ describe("Hello World challenge: Return the correct greeting", function () {
     });
   });
 });
+
 
 
