@@ -10,5 +10,12 @@ describe("SUM challenge: adding two numbers", function () {
   it("should return the sum of the numbers even if they are in string (numeric)", function () {
     assert.equal(new SumSolution().compute("1", "2"), 3);
   });
+
+  it("should throw an Error if the parameters are not numeric (number or number as string)", function () {
+    assert.throws(() => {
+      new SumSolution().compute("abc", 2);
+    });
+  });
 });
+
 
