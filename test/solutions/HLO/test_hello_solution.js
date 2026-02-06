@@ -8,13 +8,10 @@ describe("Hello World challenge: Return the correct greeting", function () {
   });
 
   it("should return error if parameter is not defined or string", function () {
-    assert.throws(() => {
-      (new HelloSolution().hello(),
-        {
-          name: "Error",
-          message:
-            "Please provide a valid parameter (Parameter must be a string!).",
-        });
+    assert.throws(() => new HelloSolution().hello(), {
+      name: "Error",
+      message:
+        "Please provide a valid parameter (Parameter must be a string!).",
     });
     assert.throws(() => {
       (new HelloSolution().hello(123),
@@ -26,4 +23,5 @@ describe("Hello World challenge: Return the correct greeting", function () {
     });
   });
 });
+
 
