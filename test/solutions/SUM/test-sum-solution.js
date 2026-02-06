@@ -12,9 +12,10 @@ describe("SUM challenge: adding two numbers", function () {
   });
 
   it("should throw an Error if the parameters are not numeric (number or number as string)", function () {
-    assert.throws(() => {
+    (assert.throws(() => {
       new SumSolution().compute("abc", 2);
-    }), Error;
+    }),
+      Error);
   });
 
   it("should throw an Error if both of the parameters are not provided", function () {
@@ -26,6 +27,7 @@ describe("SUM challenge: adding two numbers", function () {
     }, Error);
   });
 });
+
 
 
 
