@@ -23,6 +23,3 @@ describe("Hello World challenge: Return the correct greeting", function () {
     });
   });
 });
-
-
-
